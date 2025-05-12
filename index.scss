@@ -1,0 +1,140 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .search-area {
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .search-area input {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      outline: none;
+    }
+
+    .search-area button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .search-area button:hover {
+      background-color: #4338ca;
+    }
+
+    .card {
+      display: flex;
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-img {
+      flex: 1;
+      background-color: #e0e7ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .card-img img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #4f46e5;
+      object-fit: cover;
+    }
+
+    .card-body {
+      flex: 2;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-body h2 {
+      font-size: 1.8rem;
+      color: #111827;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-body p.bio {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .stats {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat span {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+
+    .stat small {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card-body {
+        padding: 1.5rem;
+      }
+
+      .card-img {
+        padding: 1.5rem;
+      }
+
+      .stats {
+        justify-content: center;
+      }
+    }
